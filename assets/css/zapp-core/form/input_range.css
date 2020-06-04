@@ -1,0 +1,43 @@
+div.multi-range {
+    position: relative;
+    height: 50px;
+    width:80%!important;
+    margin-left:10%;
+}
+
+input[type="range"] {
+    display: block;
+    height: 2em;
+    margin: 0;
+    pointer-events: none;
+}
+
+input[type="range"] + input[type="range"] {
+    margin-top: -2em;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+}
+
+input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+}
+
+input[type="range"]::-ms-thumb {
+    pointer-events: all;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-ms-thumb,
+input[type="range"]::-moz-range-thumb  {
+    height: 28px;
+    width: 28px;
+    border-radius: 28px;
+    position: relative;
+    margin: 0 0;
+    cursor: pointer;
+    appearance: none;
+    pointer-events: all;
+    box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
+}

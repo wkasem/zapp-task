@@ -1,0 +1,26 @@
+div.newInsert-label input,
+select,
+input,
+body[data-platform='mobile'] input[type=text],          /* Required: Moved from mobile/style.css */
+body[data-platform='mobile'] input[type=password],
+body[data-platform='mobile'] input[type=email],
+body[data-platform='mobile'] input[type=url],
+body[data-platform='mobile'] input[type=time],
+body[data-platform='mobile'] input[type=date],
+body[data-platform='mobile'] input[type=datetime-local],
+body[data-platform='mobile'] input[type=tel],
+body[data-platform='mobile'] input[type=number],
+body[data-platform='mobile'] select,
+body[data-platform='mobile'] textarea.materialize-textarea{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display:inline-block;
+    width: 100%;
+    padding:5px;
+    color:#555;
+    border: 1px solid rgba(100, 100, 100, 0.21);
+    height: 50px;
+    font-size: 17px;
+    border-radius: 5px;
+}

@@ -1,0 +1,404 @@
+.zapp-btn {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    overflow: visible;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 15px;
+    text-align:center;
+    font-weight:400;
+    border-radius:3px;
+    margin:1px;
+}
+.zapp-btn:hover {
+    opacity:0.7;
+    color:inherit;
+    text-decoration:none;
+}
+.zapp-btn:focus {
+    text-decoration:none;
+}
+.zapp-btn.w-100 {
+    display:block;
+}
+
+/* Set relative for design */
+.zapp-btn,
+.zapp-btn i {
+    position: relative;
+}
+
+/* Icon */
+.zapp-btn i {
+    font-size:inherit;
+    display: inline-flex;
+    margin-left:5px;
+    margin-right:5px;
+    text-align: center;
+}
+
+/* In Popups -> make bigger */
+div.popup-btns .zapp-btn:not(.button-rounded),
+div.footer .zapp-btn:not(.button-rounded),
+div.myczModal .mycz-modal-footer .zapp-btn:not(.button-rounded) {
+    padding: 8px 15px;
+    font-size:16px;
+    min-width:150px;
+    font-weight:600;
+}
+
+
+div.popup-btns .zapp-btn.button-dark,
+div.footer .zapp-btn.button-dark,
+div.myczModal .mycz-modal-footer .zapp-btn.button-dark {
+    font-weight:400;
+}
+
+/* Popup classic */
+.popup-classic div.btns .zapp-btn {
+    padding-left:0px;
+    padding-right:0px;
+    min-width:0px;
+}
+
+/* Article button */
+div.article .zapp-btn,
+div.zapp-element-articles .zapp-btn {
+    font-weight:700;
+}
+
+/* Large 300px */
+.zapp-btn-large {
+    width:300px;
+}
+
+/* Large 225px */
+.zapp-btn-225 {
+    width:225px;
+}
+
+/* Full width */
+.zapp-btn-100 {
+    width:100%;
+}
+
+/* Small */
+.button-small,
+.zapp-btn .button-small {
+    padding:5px 10px;
+    font-size:12px!important;
+}
+.zapp-btn.button-small i {
+    font-size:12px;
+}
+.zapp-btn.button-small i.zapp-icon {
+    /* width:10px; */
+    min-width: 17px;
+    margin-top: 3px;
+}
+
+/* Bigger */
+.button-bigger,
+.zapp-btn.button-bigger {
+    font-size:20px;
+    padding:10px 20px;
+}
+
+/* Biggest */
+/* Bigger */
+.button-biggest,
+.zapp-btn.button-biggest {
+    font-size:20px;
+    padding:14px 26px;
+}
+
+/* Fat */
+.zapp-btn-fat {
+    padding:15px;
+}
+
+/* Rounded */
+.zapp-btn.button-rounded,
+.button-rounded {
+    width:40px;
+    min-width:0px;
+    padding: 0px;
+    height:40px;
+    border-radius:50%;
+    display:inline-block;
+    text-align: center;
+    padding-top: 1px;
+    position:relative;
+    font-size: 24px!important;
+    font-weight: 600;
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    -moz-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+.zapp-btn.button-rounded.button-bigger {
+    width:100px;
+    height:100px;
+    padding-top:23px;
+}
+.zapp-btn.button-rounded.button-bigger i {
+    font-size:50px;
+}
+
+.zapp-btn.button-rounded.button-small,
+.button-rounded.button-small{
+    width:30px;
+    height:30px;
+    font-size: 15px!important;
+    padding-top:3px;
+}
+
+/* Square */
+.zapp-btn.button-square {
+    width:140px;
+    height:120px;
+    float:left;
+    font-size:12px!important;
+    padding: 10px;
+    border-radius: 0px;
+    line-height: 1.2!important;
+    padding-top: 9px;
+    border: 1px solid #fff;
+    margin: 0px;
+    text-align:center;
+}
+.zapp-btn.button-square.button-small {
+    width: 100px;
+    height: 70px;
+    padding:2px;
+}
+.zapp-btn.button-square.button-small i{
+    margin: 10px;
+    font-size:22px;
+}
+.zapp-btn.button-square i {
+    display:block;
+    margin:15px;
+    font-size:35px;
+}
+
+/* Message Style */
+.button-message {
+    border-radius:15px;
+    border-bottom-left-radius:0px;
+}
+
+/* Left aligned */
+.zapp-btn.button-left {
+    text-align: left;
+    padding-left:5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.zapp-btn.button-left i {
+    width:24px;
+    text-align: center;
+    margin:0px;
+    float:left;
+    display: inline-block;
+}
+.zapp-btn.button-left i.zapp-icon {
+    min-width: 21px;
+    min-height: 20px;
+    width: 15px;
+    height: 15px;
+    margin-left: -2px;
+    margin-right: 5px;
+}
+.zapp-btn.button-left span {
+    float:left;
+    width: calc(100% - 26px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Icon left aligned */
+.zapp-btn-icon-left i{
+    position: absolute;
+    float:left;
+    left: 10px;
+    top: 14px;
+}
+
+/* Tab */
+.zapp-btn.button-tab, .button-tab {
+    font-weight: 600;
+    margin:2px;
+}
+.zapp-btn.button-tab:not(.button-bigger):not(.button-biggest), .button-tab:not(.button-bigger):not(.button-biggest) {
+    border-radius: 15px;
+    padding: 3px 10px;
+    font-size:13px;
+}
+.zapp-btn.button-tab:not(.button-bigger):not(.button-biggest) i, .button-tab:not(.button-bigger):not(.button-biggest)  i{
+    font-size:15px;
+}
+
+.zapp-btn.button-tab.button-bigger, .button-tab.button-bigger {
+    border-radius: 30px;
+    font-size:18px;
+    padding:8px 20px;
+}
+.zapp-btn.button-tab.button-bigger i.zapp-icon, .button-tab.button-bigger i.zapp-icon{
+    margin-bottom: -2px;
+    display: inline-block;
+}
+
+.zapp-btn.button-tab.button-biggest, .button-tab.button-biggest {
+    border-radius: 45px;
+}
+
+.button-tab.button-grey {
+    background-color: #ececec !important;
+    color: rgba(85, 85, 85, 0.74)!important;
+}
+.button-tab.button-grey i {
+    color: rgba(85, 85, 85, 0.74)!important;
+}
+
+
+/* Disabled */
+.zapp-btn.button-disabled,.button-disabled,.zapp-btn.disabled, span.disabled {
+    cursor:not-allowed;
+    pointer-events:none;
+    opacity:0.4;
+    filter:alpha(opacity=65);
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+
+/* ACTIVE (ARROW) */
+.button-active {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.button-active::after {
+    font-family:"Ionicons";
+    position: absolute;
+    color: #1e8aff;
+    font-size: 15px;
+    animation:fadeInLeft 150ms;
+}
+
+.button-active.active-down {
+    margin-bottom:10px;
+}
+.button-active.active-down::after {
+    content: "\f35f\   ";
+    bottom: -17px;
+    left: calc(50% - 4px);
+    font-size: 20px;
+}
+.button-active.active-right::after { /* Used in mycz-designer v2 */
+    content: "\f10a\   ";
+    top: -19px;
+    right: -17px;
+    font-size: 48px;
+}
+
+
+/* mycz.ele.btn_squared - fix for FA-Icons */
+.workflow-action i.fa {
+    height: 71px;
+    padding: 15px;
+}
+.workflow-action img {
+    height:71px!important;
+    text-align: center;
+    display: inline-block;
+}
+.workflow-action i.zapp-icon {
+    width: 50px!important;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    margin:8px 0px;
+}
+
+@media (min-width: 1080px) and (min-height: 1920px) {
+
+    .workflow-action i.zapp-icon {
+        width: 100px!important;
+        height: 100px;
+    }
+
+    .workflow-action div{
+        font-size:30px;
+    }
+    .workflow-action span{
+        font-size:20px;
+    }
+
+}
+
+/* Badges */
+.zapp-btn-badge-new {
+    font-size:11px;
+    position: absolute;
+    top:-5px;
+    right:auto;
+    background: #56c474;
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
+    box-shadow: 0px 0px 2px 1px rgba(84, 84, 84, 0.16);
+}
+/*new zapp-btn block style*/
+.zapp-block{
+    width: 100%;
+}
+
+/* Checked button */
+.zapp-btn.button-checked,
+.button-checked {
+    opacity:0.7;
+    border: 0!important;
+}
+.zapp-btn.button-checked::after,
+.zapp-btn.button-unchecked::after,
+.button-checked::after,
+.button-unchecked::after {
+    font-family:"Ionicons";
+    position: absolute;
+    color: #ffffff;
+    font-size: 14px;
+    content: "\f122";
+    top: -5px;
+    left: -1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+.zapp-btn.button-unchecked::after,
+.button-unchecked::after {
+    content: "\f12a";
+    background: #e82256;
+}
+.zapp-btn.button-checked::after,
+.button-checked::after {
+    content: "\f122";
+    background: #36bd4b;
+    top:9px;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+}

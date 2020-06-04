@@ -1,0 +1,53 @@
+
+Your Solution
+
+# Summary #
+
+Create an application, where you can manage customers.
+Save and read the data in localStorage.
+
+
+# Details #
+
+1. Create a responsive sidebar and header
+
+2. Extend the core with an own function mycz.table.. to pass objects or arrays,
+and get a responsive table back.
+
+3. Use your new function and all the other core functions to display the table of
+customers. Use mycz.ele.btn and mycz.form to allow the user to enter a new customer. Write your code therefore in your_solution.js.
+
+4. Make the table editable. 
+
+
+# Requirements #
+
+1. Only jQuery allowed to use (no other libraries)
+
+2. No other html-files are allowed, no reload of the page is allowed, rerender the data as you think is the best solution for your customer
+
+3. Responsive means: Works on Desktop + Mobile
+
+4. Comment your code
+
+5. For better understanding, try to use the step-system (see example in your_solution.js)
+
+6. Do not modify index.html
+
+
+# What we focus on #
+
+1. Clean and readable code
+
+2. Commenting
+
+3. Find yourself solutions
+
+4. Learn new things only with comments and no documentation
+
+5. Usage of core
+
+6. Extending the zapp-core with functions that make sense and are reusable for others
+
+7. Detailed, and tested
+

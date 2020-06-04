@@ -1,0 +1,47 @@
+/* DO NOT MOVE THIS FILE, or Move :root somewhere else.
+ Its used in our build-scripts */
+:root {
+    --color-main: #2dcf8c;
+    --color-secondary: #2DAECF;
+    --color-gradient: linear-gradient(50deg, #2dcf8c,#2DAECF);
+    --font-logo: Quicksand, sans-serif;
+    --font-body: Quicksand, sans-serif;
+}
+.color-main {
+    color:var(--color-main);
+}
+
+.button-main {
+    background-color:var(--color-main);
+    color:#fff;
+}
+.color-secondary {
+    color:var(--color-secondary);
+}
+.color-primary {
+    color:#62cf83;
+}
+.button-secondary {
+    background-color:var(--color-secondary);
+    color:#fff;
+}
+.gradient-background {
+    background: var(--color-gradient);
+}
+
+/* Gradient text*/
+
+.gradient-text {
+    background-image: var(--color-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+html[data-browser='IE'] .gradient-text {
+    background-image:none!important;
+    color:var(--color-secondary);
+    -webkit-background-clip:unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+}

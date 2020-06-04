@@ -1,0 +1,91 @@
+.todo > p {
+    display:block;
+    float:left;
+    padding:5px;
+    width:100%;
+}
+input[type='checkbox']{
+    height:25px;
+    width:1px;
+    float:left;
+    margin:0px;
+    position: relative!important;
+    opacity:0;
+}
+input[type="checkbox"]{
+
+}
+input[type='checkbox']+label {
+    margin-left:30px;
+    width:calc(100% - 38px)!important;
+    white-space:normal;
+    float:left;
+    font-weight:400;
+    position: relative;
+    padding-left:0px;
+    cursor: pointer;
+    font-size:14px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+input[type="checkbox"]:checked + label {
+    text-decoration: none!important;
+    color:#66b5ec!important;
+    font-weight:600;
+}
+
+input[type="checkbox"]:checked {
+}
+input[type="checkbox"]:not(:checked)+label::before {
+    content: " ";
+    padding-left: 2px;
+    position: absolute;
+    font-size: 17px;
+    width: 25px;
+    height:25px;
+    top:0px;
+    left:-30px;
+    background: linear-gradient(50deg, #f0f1ef, #f4f5f3);
+    border: 2px solid #d7d6db;
+    border-radius:3px;
+    color:#fff;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked+label::before {
+    font-family: "FontAwesome";
+    content: "\f00c\   ";
+    padding-left: 2px;
+    position: absolute;
+    font-size: 15px;
+    width: 25px;
+    height:25px;
+    top:0px;
+    left:-30px;
+    background: linear-gradient(50deg, #66b5ec,#56ace8);
+    border: 2px solid #66b5ec;
+    border-radius:3px;
+    color:#fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    text-align: center;
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    padding-top: 0px;
+}
+
+div.todo[data-max="1"] input[type="checkbox"]:not(:checked)+label::before,
+div.todo[data-max="1"] input[type="checkbox"]:checked+label::before {
+    border-radius:50%!important;
+}
+input[type="checkbox"]:focus {
+    outline:0!important;
+}
+
+/* Temporary fixes */
+input[type="checkbox"]+label {
+    padding-top:2px;
+}
+div.mycz-full-menu input[type="checkbox"]+label {
+    padding-top:5px;
+}
