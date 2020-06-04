@@ -46,7 +46,7 @@ $(document).ready(function () {
         var f = new mycz.form('New Customer', {
 
             /**
-             * Company Name
+             * ID
              */
             id: {
                 type: 'text',
@@ -62,7 +62,7 @@ $(document).ready(function () {
                 formWidth: '100%'
             },
             /**
-             * Company Name
+             * First Name
              */
             first_name: {
                 type: 'text',
@@ -78,7 +78,7 @@ $(document).ready(function () {
                 formWidth: '100%'
             },
             /**
-             * Company Name
+             * Last Name
              */
             last_name: {
                 type: 'text',
@@ -94,7 +94,7 @@ $(document).ready(function () {
                 formWidth: '100%'
             },
             /**
-             * Company Name
+             * Email
              */
             email: {
                 type: 'text',
@@ -110,7 +110,7 @@ $(document).ready(function () {
                 formWidth: '100%'
             },
             /**
-             * Company Name
+             * Telephone
              */
             telephone: {
                 type: 'text',
