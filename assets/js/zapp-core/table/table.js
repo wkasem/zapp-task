@@ -1,5 +1,5 @@
 /**
- * A new consolidated form-function.
+ * A new consolidated table-function.
  * U must create a new instance: new mycz.table();
  *
  * @param opts.id string - helps to select this instance anywhere in the code
