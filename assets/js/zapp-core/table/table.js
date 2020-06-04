@@ -126,7 +126,7 @@ mycz.table = function (opts) {
      }
 
      /**
-     * add new row row to the table 
+     * add new row to the table 
      * 
      * @param row object - containing data for table row
      * @param newRow boolean - should be saved to data store or not 
@@ -231,16 +231,6 @@ mycz.table = function (opts) {
           this.container.remove();
 
           delete window.tables[this.opts.id];
-     }
-
-     /**
-     * static function to get table instance by id
-     * @param id string
-     * @returns {mycz.table}
-     */
-     this.getTableById = function (id) {
-
-          return mycz.helpers.default(window.tables[id], {});
      }
 
 
